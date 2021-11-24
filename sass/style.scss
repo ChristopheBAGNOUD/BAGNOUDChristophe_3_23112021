@@ -4,14 +4,79 @@ html{
 }
 
 
+
 body{
     max-width: 320px;
     width: 100%;
     margin: 0 auto 0;
 }
- 
+
+.hiddenload{
+
+    transition: 1s ease-in-out 4s;
+    opacity: 0;
+    visibility: hidden;
+    
+    .loadingscreen{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 95%;
+    
+    }
+    .loading{
+        width: 200px;
+        height: 20px;
+        border: 5px solid #9356DC;
+   
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        border-radius: 10px;
+    .textload{
+        font-family: 'Shrikhand', cursive;
+        margin-left: 15%;
+        padding-top: 25px;
+        position: absolute;
+        font-size: 20px;
+        color: #FF79DA;
+        }
+    .ball{
+        display: block;
+        width: 20px;
+        height: 100%;
+        background-color: #99E2D0;
+        -moz-animation: slide 2s infinite ease-in-out alternate;
+        -webkit-animation: slide 2s infinite ease-in-out alternate;
+        -ms-animation: slide 2s infinite ease-in-out alternate;
+        -o-animation: slide 2s infinite ease-in-out alternate;
+        animation: slide 2s infinite ease-in-out alternate;
+        border-radius: 5px;
+        }
+    }
+}
+@keyframes slide {
+    to { margin-left: 90%;}
+}
+@-moz-keyframes slide{
+    to { margin-left: 90%;}
+}
+@-webkit-keyframes slide{
+    to { margin-left: 90%;}
+}
+@-ms-keyframes slide{
+    to { margin-left: 90%;}
+}
+@-o-keyframes slide{
+    to { margin-left: 90%;}
+}
+
+
 .titrepage{
-    color:brown;
+    color:black;
     display: flex;
     justify-content: center;
     font-family: 'Shrikhand', cursive;
@@ -242,7 +307,7 @@ color : white;
     border-radius: 30px 30px 0px 0px;
     padding: 30px 10px;
     margin-top: -50px;
-    position: relative;
+    position: fixed;
 }
 .titremenumenu{
     display: flex;
@@ -289,7 +354,7 @@ color : white;
     font-size: 16px;
 
 }
-.menumenu button{
+button{
     color: white;
     border-style: none;
     background: linear-gradient( #FF79DA,#9356DC );
@@ -298,7 +363,13 @@ color : white;
     height: 40px;
     font-weight: bold;
     margin: 25Px 50px ;
+    transition: 0.5s;
 
+}
+
+button:hover{
+    filter: brightness(125%);
+    transition: 0.5s;
 }
 
 .tetemenu a{
