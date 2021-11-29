@@ -9,31 +9,27 @@ body{
     max-width: 320px;
     width: 100%;
     margin: 0 auto 0;
-}
-
-.hiddenload{
-
-    transition: 1s ease-in-out 4s;
-    opacity: 0;
-    visibility: hidden;
-    
-    .loadingscreen{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        opacity: 95%;
+}   
+.loadingscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 95%;
+    animation: loading 1s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
     }
-    .loading{
-        width: 200px;
-        height: 20px;
-        border: 5px solid #9356DC;
-        position: absolute;
-        top: 45%;
-        left: 45%;
-        border-radius: 10px;
+.loading{
+    width: 200px;
+    height: 20px;
+    border: 5px solid #9356DC;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border-radius: 10px;
     .textload{
         font-family: 'Shrikhand', cursive;
         margin-left: 15%;
@@ -41,7 +37,7 @@ body{
         position: absolute;
         font-size: 20px;
         color: #FF79DA;
-        }
+    }
     .ball{
         display: block;
         width: 20px;
@@ -54,13 +50,22 @@ body{
         animation: slide 2s infinite ease-in-out alternate;
         border-radius: 5px;
         }
+        
     }
+
+@keyframes loading {
+    to {opacity: 0;visibility: hidden;}
+}
+@-moz-keyframes loading {
+    to {opacity: 0;}
 }
 @keyframes slide {
     to { margin-left: 90%;}
+    
 }
 @-moz-keyframes slide{
     to { margin-left: 90%;}
+
 }
 @-webkit-keyframes slide{
     to { margin-left: 90%;}
@@ -305,8 +310,9 @@ color : white;
     border-radius: 30px 30px 0px 0px;
     padding: 30px 10px;
     margin-top: -50px;
-    position: fixed;
+    position: relative;
 }
+
 .titremenumenu{
     display: flex;
     justify-content: space-between;
@@ -341,6 +347,7 @@ color : white;
     flex-direction: column;
     line-height: 25px;
     box-shadow: 0px 0px 10px rgb(190, 190, 190);
+ 
 }
 .descriptionprix{
     display: flex;
@@ -388,3 +395,78 @@ button:hover{
     font-size: 12px;
     margin-right: 2px;
 }
+
+
+
+.delay0{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+.delay1{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 0.50s;
+    animation-fill-mode: forwards;
+}
+.delay2{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+.delay3{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.delay4{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 1.25s;
+    animation-fill-mode: forwards;
+}
+.delay5{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.delay6{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+}
+.delay7{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.delay8{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 2.25s;
+    animation-fill-mode: forwards;
+}.delay9{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.delay10{
+    opacity: 0;
+    animation : delais 1s;
+    animation-delay: 2.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes delais{
+    from {opacity: 0; scale: 1.5;}
+
+    to {opacity: 100; scale: 1};
+}
+
