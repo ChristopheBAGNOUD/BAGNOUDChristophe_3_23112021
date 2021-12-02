@@ -232,7 +232,7 @@ color : white;
 }
 .logocoeur:hover .coeurfull{
     background: -webkit-linear-gradient($secondaire,$primaire);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color:$primaire;
     position: relative;
