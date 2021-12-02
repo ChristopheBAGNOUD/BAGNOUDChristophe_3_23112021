@@ -301,6 +301,7 @@ body {
   padding: 30px 10px;
   margin-top: -50px;
   position: relative;
+  overflow: hidden;
 }
 
 .titremenumenu {
@@ -334,23 +335,23 @@ body {
 
 .casemenu {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   line-height: 25px;
   box-shadow: 0px 0px 10px #bebebe;
-}
-
-.descriptionprix {
-  display: flex;
+  overflow: hidden;
   justify-content: space-between;
-  font-size: 14px;
+  cursor: pointer;
 }
 
 .titreplats {
   font-weight: bold;
   font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 button {
@@ -392,11 +393,60 @@ button:hover {
   margin-right: 2px;
 }
 
+.textplats {
+  width: auto;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0px 5px;
+}
+
+.check {
+  background-color: #99E2D0;
+  color: white;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  font-size: 25px;
+  transition: 0.5s;
+  margin: -10px -10px -10px 10px;
+}
+.check i {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.textdescriptionplat {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+}
+
 .delay0 {
   opacity: 0;
   animation: delais 1s;
   animation-delay: 0.25s;
   animation-fill-mode: forwards;
+}
+.delay0 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay0 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
 }
 
 .delay1 {
@@ -405,12 +455,28 @@ button:hover {
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
+.delay1 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay1 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
 
 .delay2 {
   opacity: 0;
   animation: delais 1s;
   animation-delay: 0.75s;
   animation-fill-mode: forwards;
+}
+.delay2 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay2 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
 }
 
 .delay3 {
@@ -419,12 +485,28 @@ button:hover {
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
+.delay3 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay3 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
 
 .delay4 {
   opacity: 0;
   animation: delais 1s;
   animation-delay: 1.25s;
   animation-fill-mode: forwards;
+}
+.delay4 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay4 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
 }
 
 .delay5 {
@@ -433,12 +515,28 @@ button:hover {
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
+.delay5 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay5 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
 
 .delay6 {
   opacity: 0;
   animation: delais 1s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
+}
+.delay6 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay6 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
 }
 
 .delay7 {
@@ -447,6 +545,14 @@ button:hover {
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
+.delay7 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay7 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
 
 .delay8 {
   opacity: 0;
@@ -454,12 +560,28 @@ button:hover {
   animation-delay: 2.25s;
   animation-fill-mode: forwards;
 }
+.delay8 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay8 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
 
 .delay9 {
   opacity: 0;
   animation: delais 1s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
+}
+.delay9 :hover .textplats {
+  max-width: 150px;
+  min-width: 150px;
+}
+.delay9 :hover .check i {
+  transform: rotate(0);
+  transition: 0.5s;
 }
 
 .delay10 {
