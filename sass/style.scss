@@ -231,9 +231,12 @@ color : white;
 
 }
 .logocoeur:hover .coeurfull{
+    background: -webkit-linear-gradient($secondaire,$primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color:$primaire;
     position: relative;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 

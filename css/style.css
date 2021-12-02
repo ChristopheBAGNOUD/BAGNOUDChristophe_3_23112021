@@ -237,9 +237,12 @@ body {
 }
 
 .logocoeur:hover .coeurfull {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #9356DC;
   position: relative;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 
 .titrepied {
