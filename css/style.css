@@ -225,6 +225,7 @@ body {
   font-size: 30Px;
   margin-right: -34px;
   color: white;
+  padding: 2px;
 }
 
 .coeur {
@@ -238,8 +239,11 @@ body {
 
 .logocoeur:hover .coeurfull {
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   color: #9356DC;
   position: relative;
   transition: 0.5s;
