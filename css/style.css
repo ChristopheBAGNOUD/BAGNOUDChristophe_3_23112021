@@ -21,6 +21,9 @@ body {
   animation: loading 1s;
   animation-fill-mode: both;
   animation-delay: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loading {
@@ -28,8 +31,6 @@ body {
   height: 20px;
   border: 5px solid #9356DC;
   position: absolute;
-  top: 45%;
-  left: 45%;
   border-radius: 10px;
 }
 .loading .textload {
@@ -244,7 +245,6 @@ body {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  color: #9356DC;
   position: relative;
   transition: 0.5s;
 }
@@ -448,8 +448,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay0 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay0 :hover .check i {
   transform: rotate(0);
@@ -463,8 +463,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay1 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay1 :hover .check i {
   transform: rotate(0);
@@ -478,8 +478,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay2 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay2 :hover .check i {
   transform: rotate(0);
@@ -493,8 +493,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay3 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay3 :hover .check i {
   transform: rotate(0);
@@ -508,8 +508,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay4 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay4 :hover .check i {
   transform: rotate(0);
@@ -523,8 +523,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay5 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay5 :hover .check i {
   transform: rotate(0);
@@ -538,8 +538,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay6 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay6 :hover .check i {
   transform: rotate(0);
@@ -553,8 +553,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay7 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay7 :hover .check i {
   transform: rotate(0);
@@ -568,8 +568,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay8 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay8 :hover .check i {
   transform: rotate(0);
@@ -583,8 +583,8 @@ button:hover {
   animation-fill-mode: forwards;
 }
 .delay9 :hover .textplats {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 180px;
+  min-width: 180px;
 }
 .delay9 :hover .check i {
   transform: rotate(0);
@@ -626,6 +626,61 @@ button:hover {
   to {
     opacity: 100;
     scale: 1;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto 0;
+  }
+
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choix {
+    width: 70%;
+  }
+
+  .contentresto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+
+  .pied {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .listpied {
+    padding-left: 0px;
+  }
+
+  .textplats {
+    width: auto;
+    transition: 0.5s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 885px;
+    min-width: 885px;
+  }
+
+  .boutoncommande {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cadreresto {
+    text-align: center;
   }
 }
 
