@@ -134,7 +134,7 @@ body{
 }
 
 .restocontent{
-    max-width: 290px;
+    width: 290px;
     margin-top: 15px;
     box-shadow: 0px 0px 10px rgb(190, 190, 190);
     border-radius: 10px;
@@ -678,21 +678,23 @@ button:hover{
     .fonctionnement{
         display: flex;
         flex-direction: column;
-      align-items: center;
+        align-items: center;
 
     }
      .choix{
         width: 70%;
-        
     }
 
     .contentresto{
         display: flex;
         justify-content: center;
         flex-direction: row;
-       flex-wrap: wrap;   
-        column-gap: 10px;     
+        flex-wrap: wrap;   
+        column-gap: 15px;     
 
+     }
+     .restocontent{
+         width: 450px;
      }
 .pied{
     display: flex;
@@ -720,5 +722,8 @@ button:hover{
 }
 .cadreresto{
     text-align: center;
+}
+.textgraph{
+    text-align: left;
 }
  }

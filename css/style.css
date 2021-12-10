@@ -142,7 +142,7 @@ body {
 }
 
 .restocontent {
-  max-width: 290px;
+  width: 290px;
   margin-top: 15px;
   box-shadow: 0px 0px 10px #bebebe;
   border-radius: 10px;
@@ -650,7 +650,11 @@ button:hover {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 15px;
+  }
+
+  .restocontent {
+    width: 450px;
   }
 
   .pied {
@@ -681,6 +685,10 @@ button:hover {
 
   .cadreresto {
     text-align: center;
+  }
+
+  .textgraph {
+    text-align: left;
   }
 }
 
