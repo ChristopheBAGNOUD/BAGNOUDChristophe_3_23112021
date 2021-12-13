@@ -4,6 +4,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.onglet {
+  font-family: "Shrikhand", cursive;
+}
+
 body {
   max-width: 320px;
   width: 100%;
@@ -601,31 +605,25 @@ button:hover {
 @keyframes delais {
   from {
     opacity: 0;
-    scale: 1.5;
   }
   to {
     opacity: 100;
-    scale: 1;
   }
 }
 @-webkit-keyframes delais {
   from {
     opacity: 0;
-    scale: 1.5;
   }
   to {
     opacity: 100;
-    scale: 1;
   }
 }
 @-moz-keyframes delais {
   from {
     opacity: 0;
-    scale: 1.5;
   }
   to {
     opacity: 100;
-    scale: 1;
   }
 }
 @media (min-width: 960px) {
