@@ -412,6 +412,8 @@ button:hover{
     transition: 0.5s;
 }
 
+
+
 .handcheck{
     font-size: 9px;
 }
@@ -731,3 +733,47 @@ button:hover{
     text-align: left;
 }
  }
+
+@media (min-width:760px) and (max-width: 967px){
+
+    body{
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto 0;
+        
+  }   
+
+    .textplats{
+        max-width: 685px;
+        min-width: 685px;   
+
+    }
+    .boutoncommande{
+        display: flex;
+        justify-content: center;
+    }
+    .fonctionnement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+     .choix{
+        width: 70%;
+    }
+
+    .contentresto{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;   
+        column-gap: 15px;     
+
+     }
+     .restocontent{
+         width: 600px;
+     }
+     .cadreresto{
+        text-align: center;
+    }
+}
