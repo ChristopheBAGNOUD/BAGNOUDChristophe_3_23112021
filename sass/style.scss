@@ -217,38 +217,36 @@ body{
 .choix:hover .icon{
     color: $primaire;
 }
+
 .coeurfull{ 
     font-size: 30Px;
     margin-right: -34px;
     color: white;
     padding:2px;
-
-
-}
-.coeur{
-    color: black;
-    font-size: 30px;
-
-}
-.logocoeur:hover .coeur
-{
-color : white;
-
-
-
-
-
-}
-.logocoeur:hover .coeurfull{
-    background: -webkit-linear-gradient($secondaire,$primaire);
+    opacity: 0;
+    background: linear-gradient($secondaire,$primaire);
     background-clip:text;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+}
+
+.coeur{
+    color: black;
+    font-size: 30px;
+}
+
+.logocoeur:hover .coeur
+{
+color : white;
+}
+
+.logocoeur:hover .coeurfull{
+    opacity: 100;
     position: relative;
-    transition:0.5s;
-    
+    transition : 0.5s;
 }
 
 
@@ -399,6 +397,7 @@ button{
 button:hover{
     filter: brightness(125%);
     transition: 0.5s;
+    box-shadow: 0px 0px 20px rgb(3, 3, 3);
 }
 
 .tetemenu a{
@@ -411,7 +410,10 @@ button:hover{
     transform: scale(1.05);
     transition: 0.5s;
 }
-
+.restocontent:touch{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 
 .handcheck{
